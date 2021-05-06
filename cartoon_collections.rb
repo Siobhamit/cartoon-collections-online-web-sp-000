@@ -7,7 +7,7 @@ planeteer_calls.map{|call| call.capitalize.concat"!"}
 end
 
 def long_planeteer_calls(calls)
-  calls.none?{|call| call.length > 4}
+  calls.any?{|call| call.length > 4}
 end
 
 def find_the_cheese# code an argument here
