@@ -3,7 +3,8 @@ def roll_call_dwarves(dwarves)# code an argument here
 end
 
 def summon_captain_planet(planeteer_calls = ["earth", "wind", "fire", "water", "heart"])
-planeteer_calls.map{|call| call[0].upcase && call.concat"!"}
+planeteer_calls.map{|call| call[0].upcase}
+planeteer_calls.map{|call| call.concat"!"}
 end
 
 def long_planeteer_calls# code an argument here
