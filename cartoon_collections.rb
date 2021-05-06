@@ -4,7 +4,7 @@ end
 
 def summon_captain_planet(planeteer_calls = ["earth", "wind", "fire", "water", "heart"])
   re = []
-  planeteer_calls.map{|call| re << call[0].upcase.concat"!"}
+  planeteer_calls.map{|call| re << (call[0].upcase && call.concat"!")}
   return re
 end
 
